@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .navbar{
+            background-color: rgb(105, 142, 243);
+            height: 100px;
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+        }
+        .navbar ul li{
+            margin: 0 20px;
+        }
+        .navbar ul li a{
+            text-decoration:none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .navbar ul li a:hover{
+            color:bisque;
+            font-size: 24px;
+        }
+        @media only screen and (max-width: 300px) {
+        .navbar ul {
+             flex-direction: column;
+             align-items: flex-start;
+             }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .Search-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .Search {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+              }
+        .Search-section{
+            width: 100%;
+            background-color: rgb(105, 142, 243);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Search{
+            width: 300px;
+            height: 40px;
+            font-size: large ;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+         }
+        
+        button{
+            font-size: 20px;
+            width: 50px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(131, 131, 236);
+            background-color: rgb(15, 15, 83);
+            border: none;
+        }
+      
+        .container{
+          width: 100%;
+          height: 100vh;
+          background-image: url(https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=600);
+          background-size: cover ;
+          display: flex;
+          justify-content: space-around;
+          align-items: center ;
+          flex-wrap: wrap;
+        }
+      
+        .content{
+            width: 45%;
+            background-color: rgb(27, 77, 153);    
+            border: 10px solid rgb(6, 174, 252);
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .content2{
+            width: 45%;
+            background-color: rgb(27, 77, 153);    
+            border: 10px solid rgb(6, 174, 252);
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        @media only screen and (max-width: 768px) {
+            .content, .content2 {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+         <title>Document</title>
+</head>
+<body>
+     <nav class="navbar">
+   
+        <ul> 
+            <li><i class="fa fa-black-tie" aria-hidden="true" style="font-size: 50px; color: white; margin-bottom: 20px;">logo</i></li>
+            <li><a href="#">Home</a> <i class="fa fa-home" style="font-size: 22px;"></i> </li>
+            <li><a href="#">About Us</a>  <i class="fa fa-exclamation-circle" style="font-size: 22px;"></i> </li>
+            <li><a href="#">Contact Us</a> <i class="fa fa-phone" style="font-size: 22px;"></i> </li>
+            <li><a href="#">Product</a><i class="fa fa-product-hunt" style="font-size: 22px;"></i> </li>
+        </ul>
+     </nav>
+     
+<div class="Search-section">
+<input class="Search" type="text" placeholder="Search...">
+<button> <i class="fa fa-search"></i></button> 
+</div>
+<div class="container">
+    <div class="content"> <h2>Launch your brand with a
+free logo in just one click</h2> <p>Our free online logo generator gives you hundreds of logo design options at no cost. Customize them and download your brand logo for free in high-resolution formats such as PNG, SVG vector files, and more</p>
+</div>
+<div class="content2"> <h2>Our logo maker is easy</h2> <p>Start by entering your company name and industry, then select the perfect logo styles, colors, and symbols that you like the best. Looka Logo Maker will use these as inspiration and start to generate custom logo designs</p>
+    </div>
+</div>
+
+</body>
+</html>
